@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>shoping.com</title>
+    <style>
+        ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #2d2d2d;
+        }
+
+        li.nav-item {
+            float: left;
+        }
+
+        li.nav-item a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 30px;
+            text-decoration: none;
+        }
+        
+         /* .nav-ite {
+            display: block;
+            color: white;
+          margin-right: 100px;
+           
+            text-decoration: none;
+        } */
+
+        li.nav-item a:hover {
+            background-color: #555;
+        }
+
+        .search-container {
+            float: right;
+        }
+
+        input[type="text"] {
+            padding: 6px;
+            margin-top: 8px;
+            margin-right: 16px;
+            border: none;
+            font-size: 17px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+        }
+
+        .vertical-line {
+            position: absolute;
+            border-left: 2px solid #000;
+            height: 430%;
+            left: 150px;
+            box-shadow: 3px 0 10px rgba(0, 0, 0, 1);
+        }
+
+        .navbar {
+            box-shadow: 3px 0 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+        }
+
+        .image-container a {
+            text-decoration: none;
+        }
+
+        .img1, .img2, .img3, .img4, .img5 {
+            padding: 25px;
+        }
+
+        .img1 img,
+        .img2 img,
+        .img3 img,
+        .img4 img,
+        .img5 img {
+            height: 80px;
+        }
+
+        .txt1, .txt2, .txt3, .txt4, .txt5 {
+            text-align: center;
+        }
+        
+        .p1 {
+            position: absolute;
+            margin-top: 60px;
+           
+            left: 1190px;
+        }
+        .p2 {
+            position: absolute;
+            margin-top: 60px;
+          
+            left: 890px;
+        }
+        .p3 {
+            position: absolute;
+            margin-top: 60px;
+
+            left: 230px;
+        }
+        .p4 {
+            position: absolute;
+            margin-top: 60px;
+            
+            left: 480px;
+        }
+        .p5 {
+            position: absolute;
+            margin-top: 420px;
+        
+            left: 1240px;
+        }
+        .p6 {
+            position: absolute;
+            margin-top: 420px;
+           
+            left: 930px;
+        }
+        .p7 {
+            position: absolute;
+            margin-top: 420px;
+           
+            left: 590px;
+        }
+        .p8 {
+            position: absolute;
+            margin-top: 420px;
+           
+            left: 200px;
+        }
+        .p9 {
+            position: absolute;
+            margin-top: 800px;
+           
+            left: 1240px;
+        }
+        .p10 {
+            position: absolute;
+            margin-top: 800px;
+          
+            left: 870px;
+        }
+        .p11 {
+            position: absolute;
+            margin-top: 800px;
+           
+            left: 560px;
+        }
+        .p12 {
+            position: absolute;
+            margin-top: 800px;
+           
+            left: 230px;
+        }
+        .p13 {
+            position: absolute;
+            margin-top: 1130px;
+           
+            left: 1240px;
+        }
+        .p14 {
+            position: absolute;
+            margin-top: 1130px;
+           
+            left: 890px;
+        }
+        .p15 {
+            position: absolute;
+            margin-top: 1130px;
+           
+            left: 540px;
+        }
+        .p16 {
+            position: absolute;
+            margin-top: 1130px;
+           
+            left: 230px;
+        }
+        .p17 {
+            position: absolute;
+            margin-top: 1480px;
+           
+            left: 1240px;
+        }
+        .p18 {
+            position: absolute;
+            margin-top: 1480px;
+           
+            left: 890px;
+        }
+        .p19 {
+            position: absolute;
+            margin-top: 1480px;
+           
+            left: 500px;
+        }
+        .p20 {
+            position: absolute;
+            margin-top: 1480px;
+           
+            left: 230px;
+        }
+        .p21 {
+            position: absolute;
+            margin-top: 1840px;
+           
+            left: 1290px;
+        }
+        .p22 {
+            position: absolute;
+            margin-top: 1840px;
+           
+            left: 890px;
+        }
+        .p23 {
+            position: absolute;
+            margin-top: 1840px;
+           
+            left: 540px;
+        }
+        .p24 {
+            position: absolute;
+            margin-top: 1840px;
+           
+            left: 230px;
+        }
+        .p25 {
+            position: absolute;
+            margin-top: 2240px;
+           
+            left: 1290px;
+        }
+        .p26 {
+            position: absolute;
+            margin-top: 2240px;
+           
+            left: 890px;
+        }
+        .p27 {
+            position: absolute;
+            margin-top: 2240px;
+           
+            left: 580px;
+        }
+        .p28 {
+            position: absolute;
+            margin-top: 2240px;
+           
+            left: 230px;
+        }
+        .p29 {
+            position: absolute;
+            margin-top: 2630px;
+           
+            left: 1240px;
+        }
+        .p30 {
+            position: absolute;
+            margin-top:2630px;
+           
+            left: 890px;
+        }
+        .p31 {
+            position: absolute;
+            margin-top: 2630px;
+           
+            left: 600px;
+        }
+        .p32 {
+            position: absolute;
+            margin-top: 2630px;
+           
+            left: 230px;
+        }
+        .p1 , .p2 , .p3 , .p4 ,  .p5, .p6 ,  .p7,  
+        .p8 ,  .p9  ,  .p10  ,  .p11 ,       .p12 ,
+        .p13  ,  .p14 ,  .p15 ,  .p16   ,  .p17  ,  .p18  ,  .p19  ,  .p20  ,  .p21 ,  .p22 ,  .p23 ,  .p24  ,  .p25 ,  .p26 ,  .p27 ,  .p28,  .p29,  .p30,  .p31,  .p32    {
+            position: absolute;
+      
+            color: rgb(0, 0, 0); 
+            
+            font-size: 15px;
+         
+        }
+        .circle-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #b90c0c; /* Gmail's blue color as the border */
+    color: #ef0a0a; /* Text color */
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+}
+
+
+
+.ba {
+            position: absolute;
+            margin-top: 1900px;
+          
+            left: 720px;
+           
+        }
+        .bar {
+            position: absolute;
+            margin-top: 1900px;
+          
+            left: 0px;
+           
+        }
+    </style>
+</head>
+<body>
+    
+  
+   
+
+    <ul class="navbar">
+        <li id="btn1" class="nav-item"><a href="#">Home</a></li>
+        <li id="btn2" class="nav-item"><a href="#">About</a></li>
+        <li id="btn3" class="nav-item"><a href="#">Login</a></li>
+        <li id="btn4" class="nav-item"><a href="#">Contact</a></li>
+        <li id="btn5" class="nav-item"><a href="#">Remove Items</a></li>
+        
+        <!-- <li id="btn5" class="nav-ite"><a href="#">fgg</a></li> -->
+        <div class="search-container">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Search...">
+            </form>
+            
+        </div>
+    </ul>
+    <button class="circle-button" id="btn00" style="background-color: rgba(0, 0, 0, 0.912) rgb(39, 25, 25);"></button>
+    <div class="vertical-line"></div>
+    <div class="image-container">
+        
+        <div class="p1">
+            <a href="https://www.amazon.it/Acer-ANV15-51-5673-Notebook-Processore-i5-13420H/dp/B0CGDJ67QR/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=31DY687L8I8YB&keywords=laptops%2Band%2Bpc%2Bgaming&qid=1701200620&sprefix=laptops%2Band%2Bpc%2Bgaming%2B%2Caps%2C91&sr=8-1&th=1">
+                <img src="https://m.media-amazon.com/images/I/61jAvz8db7L.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox1"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox1"> 
+
+            <div class="txt1">
+                
+                <pre>
+Acer Nitro V 15 ANV15
+-51-5673 Notebook Gaming,
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p2">
+            <a href="https://www.amazon.it/MSI-B12VGK-889IT-Notebook-i7-12650H-Garanzia/dp/B0C46QXVNT/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=31DY687L8I8YB&keywords=laptops%2Band%2Bpc%2Bgaming&qid=1701200661&sprefix=laptops%2Band%2Bpc%2Bgaming%2B%2Caps%2C91&sr=8-3&th=1">
+                <img src="https://m.media-amazon.com/images/I/81S5tolkqSL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue" height="200" onerror="this.style.display='none'; document.getElementById('spinner').style.display='block'">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            
+            <label for="myCheckbox2"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox2">
+            <div class="txt2">
+                <pre>
+MSI Katana 15 B12VGK
+-889IT, Notebook
+                </pre>
+            </div>
+        </div>
+        
+        <div class="p3">
+            <a href="https://www.amazon.it/Greed%C2%AE-Mk2-High-Gaming-Raytracing/dp/B0C1C8HNFP/ref=sr_1_9?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2J6V62LFD0U57&keywords=pc%2Bgaming&qid=1701200711&sprefix=pc%2Bgaming%2Caps%2C184&sr=8-9&th=1">
+                <img src="https://m.media-amazon.com/images/I/71hj9sL2ZqL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox3"></label>
+            <input type="radio" value="section c" name="section" id="myCheckbox3">
+
+            <div class="txt3">
+<pre>
+Greed® Mk2 4K High End Gaming
+ PC Raytracing  Intel Core i7
+</pre>
+            </div>
+        </div>
+        <div class="p4">
+            <a href="https://www.amazon.it/MSI-12VE-292IT-Notebook-i7-12650H-Garanzia/dp/B0C46TCR9L/ref=sr_1_14?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2J6V62LFD0U57&keywords=pc%2Bgaming&qid=1701200761&sprefix=pc%2Bgaming%2Caps%2C184&sr=8-14&th=1">
+                <img src="https://m.media-amazon.com/images/I/71IjKpXWaJL._AC_SY450_.jpg" alt="network issue" height="180">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox4"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox4">
+            <div class="txt3">
+                <pre>
+MSI Thin GF63 12VE-
+292IT, Notebook
+            </pre>
+            </div>
+        </div>
+        <div class="p5">
+            <a href="https://www.amazon.it/EMCA4-Computer-Gaming-Ryzen-4500/dp/B0B649TGJJ/ref=sr_1_13?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2J6V62LFD0U57&keywords=pc+gaming&qid=1701200761&sprefix=pc+gaming%2Caps%2C184&sr=8-13">
+                <img src="https://m.media-amazon.com/images/I/61YIP-bNIoL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue" height="200">
+            </a>
+            
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox5"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox5">
+            <div class="txt3">
+                <pre>
+EMCA4 Computer Gaming PC AMD
+            </pre>
+            </div>
+        </div>
+        <div class="p6">
+            <a href="https://www.amazon.it/Gaming-Computer-Fisso-Desktop-Intel/dp/B0992SZKQ9/ref=sr_1_16?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2J6V62LFD0U57&keywords=pc+gaming&qid=1701200761&sprefix=pc+gaming%2Caps%2C184&sr=8-16">
+                <img src="https://m.media-amazon.com/images/I/51o7U-7oUHL.__AC_SY300_SX300_QL70_ML2_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox6"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox6">
+            <div class="txt3">
+                <pre>
+PC Gaming Computer 
+Fisso Desktop Intel i5 
+            </pre>
+            </div>
+        </div>
+        <div class="p7">
+            <a href="https://www.amazon.it/PC-Gaming-4-10GHz-Windows-GeForce-GTX1080/dp/B0799PD2HN/ref=sr_1_28?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2J6V62LFD0U57&keywords=pc%2Bgaming&qid=1701200761&sprefix=pc%2Bgaming%2Caps%2C184&sr=8-28&th=1">
+                <img src="https://m.media-amazon.com/images/I/71aZySz4DDL.__AC_SX300_SY300_QL70_ML2_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox7"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox7">
+            <div class="txt3">
+                <pre>
+Megaport PC Gaming AMD 
+Ryzen 7 5700X 8x
+            </pre>
+            </div>
+        </div>
+        <div class="p8">
+            <a href="https://www.amazon.it/MSI-13VH-018IT-Notebook-i9-13980HX-Garanzia/dp/B0BRJL6WH4/ref=sr_1_4_sspa?crid=1FYQGWTB2IZLL&keywords=gaming%2Blaptop&qid=1701200954&sprefix=gaming%2Blapyop%2Caps%2C109&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+                <img src="https://m.media-amazon.com/images/I/71yWBoj2kuL.__AC_SX300_SY300_QL70_ML2_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox8"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox8">
+            <div class="txt3">
+                <pre>
+MSI Titan GT77HX 13VH-018IT
+, Notebook Gaming 17.3"
+            </pre>
+            </div>
+        </div>
+        <div class="p9">
+            <a href="https://www.amazon.it/Acer-AN515-58-94DQ-Notebook-Processore-i9-12900H/dp/B0CGDJM361/ref=sr_1_8?crid=1FYQGWTB2IZLL&keywords=gaming+laptop&qid=1701200990&sprefix=gaming+lapyop%2Caps%2C109&sr=8-8">
+                <img src="https://m.media-amazon.com/images/I/71vgvypkyGL.__AC_SY300_SX300_QL70_ML2_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox9"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox9">
+            <div class="txt3">
+                <pre>
+Acer Nitro 5 AN515-58
+-94DQ Notebook Gaming,
+            </pre>
+            </div>
+        </div>
+        <div class="p10">
+            <a href="https://www.amazon.it/Nuovo-Apple-MacBook-Archiviazione-Core-i7/dp/B081G25BH9/ref=sr_1_17_sspa?crid=1FYQGWTB2IZLL&keywords=gaming+laptop&qid=1701200990&sprefix=gaming+lapyop%2Caps%2C109&sr=8-17-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1">
+                <img src="https://m.media-amazon.com/images/I/61xERL34brL.__AC_SY445_SX342_QL70_ML2_.jpg" height="170">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox10"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox10">
+            <div class="txt3">
+                <pre>
+Apple 2019 MacBook Pro 
+       </pre>
+            </div>
+        </div>
+        <div class="p11">
+            <a href="https://www.amazon.it/Lenovo-V15-Portatile-I5-1135G1-Bluetooth/dp/B083VXX2PH/ref=sr_1_19_sspa?crid=1FYQGWTB2IZLL&keywords=gaming+laptop&qid=1701200990&sprefix=gaming+lapyop%2Caps%2C109&sr=8-19-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&psc=1">
+                <img src="https://m.media-amazon.com/images/I/71nDYhgPwwL._AC_SY450_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox11"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox11">
+            <div class="txt3">
+                <pre>
+ Notebook Lenovo I5 V15 Portatile
+            </pre>
+            </div>
+        </div>
+        <div class="p12">
+            <a href="https://www.amazon.it/HP-15-fb0002sl-Notebook-Display-Grafica/dp/B0BLW66WZT/ref=sr_1_26?crid=1FYQGWTB2IZLL&keywords=gaming%2Blaptop&qid=1701200990&sprefix=gaming%2Blapyop%2Caps%2C109&sr=8-26&th=1">
+                <img src="https://m.media-amazon.com/images/I/91BtRAlERLL.__AC_SY300_SX300_QL70_ML2_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox12"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox12">
+            <div class="txt3">
+                <pre>
+HP - Gaming Victus 
+15-fb0002sl Notebook,
+            </pre>
+            </div>
+        </div>
+        <div class="p13">
+            <a href="https://www.amazon.it/Acer-Predator-PH18-71-93LG-Processore-i9-13900HX/dp/B0C7LLDQTX/ref=sr_1_31?crid=1FYQGWTB2IZLL&keywords=gaming+laptop&qid=1701200990&sprefix=gaming+lapyop%2Caps%2C109&sr=8-31">
+                <img src="https://m.media-amazon.com/images/I/71gqJCJSjJL.__AC_SX300_SY300_QL70_ML2_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox13"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox13">
+            <div class="txt3">
+                <pre>
+Acer Predator Helios 18
+ PH18-71-93LG Notebook
+            </pre>
+            </div>
+        </div>
+        <div class="p14">
+            <a href="https://amazon.it/CyberpowerPC-Luxe-2080Ti-Gaming-raffreddamento/dp/B01J4712UQ/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3QSJEF2SVR05K&keywords=gaming+pc&qid=1701201304&refinements=p_36%3A200000-500000&rnid=9733316031&sprefix=gaming+p%2Caps%2C200&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+                <img src="https://m.media-amazon.com/images/I/817tLadBoFL.__AC_SX300_SY300_QL70_ML2_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox14"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox14">
+            <div class="txt3">
+                <pre>
+CyberpowerPC Luxe PC 
+Gaming - Intel Core i9
+            </pre>
+            </div>
+            
+        </div>
+        <div class="p15">
+            <a href="https://amazon.it/GEEKIUS-14700KF-RTX4070Ti-850WGOLD-Win11Pro/dp/B0CL7914W5/ref=sr_1_8?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3QSJEF2SVR05K&keywords=gaming%2Bpc&qid=1701201348&refinements=p_36%3A200000-500000&rnid=9733316031&sprefix=gaming%2Bp%2Caps%2C200&sr=8-8&th=1">
+                <img src="https://m.media-amazon.com/images/I/71Mj6CjoeWL.__AC_SX300_SY300_QL70_ML2_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox15"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox15">
+            <div class="txt3">
+                <pre>
+GEEKIUS XELIOR
+ WASPY PC GAMING i7
+            </pre>
+           
+            </div>
+
+        </div>
+        
+           
+        
+        <div class="p16">
+            <a href="https://www.amazon.it/Gaming-Intel-14900kf-24core-Nvidia/dp/B0CMM4666V/ref=sr_1_10?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3QSJEF2SVR05K&keywords=gaming+pc&qid=1701201348&refinements=p_36%3A200000-500000&rnid=9733316031&sprefix=gaming+p%2Caps%2C200&sr=8-10">
+                <img src="https://m.media-amazon.com/images/I/51XwXkCN9cL._AC_SY450_.jpg" height="200">
+            </a>
+            <div class="spinner-border" role="status" id="spinner" style="display: none;">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <label for="myCheckbox16"></label>
+            <input type="radio" value="section b" name="section" id="myCheckbox16">
+            <div class="txt3">
+                <pre>
+gaming PC Intel i9 14900kf
+ 24core 6Ghz- Nvidia RTX 4080
+            </pre>
+            </div>
+        </div>
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <div class="p17">
+            <a href="https://www.amazon.it/Apple-Computer-archiviazione-Ethernet-Compatibile/dp/B0BSJBFZR7/ref=sr_1_2_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AXVRE1BA9VB7&keywords=macbook&qid=1701201446&sprefix=mac%2Bbook%2Caps%2C161&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+                <img src="https://m.media-amazon.com/images/I/61La8PAa42L.__AC_SY445_SX342_QL70_ML2_.jpg" alt="network issue " height="170" width="300">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox17"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox17"> 
+
+            <div class="txt1">
+                
+                <pre>
+Apple 2023 Computer desktop
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p18">
+            <a href="https://www.amazon.it/2022-Apple-Portatile-MacBook-chip/dp/B0B3CM79ZH/ref=sr_1_6?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AXVRE1BA9VB7&keywords=macbook&qid=1701201477&sprefix=mac%2Bbook%2Caps%2C161&sr=8-6&th=1">
+                <img src="https://m.media-amazon.com/images/I/71EbycNfD4L._AC_SX342_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox18"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox18"> 
+
+            <div class="txt1">
+                
+                <pre>
+Apple PC Portatile MacBook Air
+ 2022 con chip M2: display
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p19">
+            <a href="https://www.amazon.it/Apple-MacBook-Retina-QWERTY-Ricondizionato/dp/B097NTTNZG/ref=sr_1_10?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AXVRE1BA9VB7&keywords=macbook&qid=1701201477&sprefix=mac+book%2Caps%2C161&sr=8-10">
+                <img src="https://m.media-amazon.com/images/I/41+F8foKVxS._AC_SY450_.jpg" alt="network issue " height="180">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox19"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox19"> 
+
+            <div class="txt1">
+                
+                <pre>
+Apple MacBook 
+Pro Retina 13" i7
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p20">
+            <a href="https://www.amazon.it/Megaport-Completo-Schermo-Tastiera-Windows/dp/B07BK7YYRP/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3RHQTNDZCW6O4&keywords=pc%2Bgaming%2Bgood%2Blooking&qid=1701201573&sprefix=pc%2Bgaming%2Bgood%2Blooking%2B%2Caps%2C104&sr=8-1&th=1">
+                <img src="https://m.media-amazon.com/images/I/618nQA27KeS.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox20"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox20"> 
+
+            <div class="txt1">
+                
+                <pre>
+Megaport PC
+ Gaming Cyberhawk AMD
+                </pre>
+            </div>
+          <!-- continuo from next line  -->
+<!-- ////////////////////////////////////////////////////////////////////////////x////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        </div>
+        <div class="p21">
+            <a href="https://www.amazon.it/PC-Desktop-Computer-Gaming-Windows/dp/B0BZ575KCF/ref=sr_1_7_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3RHQTNDZCW6O4&keywords=pc%2Bgaming%2Bgood%2Blooking&qid=1701201602&sprefix=pc%2Bgaming%2Bgood%2Blooking%2B%2Caps%2C104&sr=8-7-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1">
+                <img src="https://m.media-amazon.com/images/I/51YjeIaHfxL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox21"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox21"> 
+
+            <div class="txt1">
+                
+                <pre>
+PC Desktop Computer
+ Gaming da Gioco
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p22">
+            <a href="https://www.amazon.it/ALLDOCUBE-13-Portatile-portatile16GB-Processore/dp/B0CHRMWTH2/ref=sr_1_2_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3T4TB1RO3R7D&keywords=laptops+gaming&qid=1701201654&sprefix=laptops+gaming+%2Caps%2C129&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+                <img src="https://m.media-amazon.com/images/I/81dt9ETYGML.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox22"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox22"> 
+
+            <div class="txt1">
+                
+                <pre>
+ALLDOCUBE GT 
+BOOK 13 Plus PC
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p23">
+            <a href="https://www.amazon.it/HP-250-G9-portatile-allutilizzo/dp/B0CN6XZBFL/ref=sr_1_4_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3T4TB1RO3R7D&keywords=laptops%2Bgaming&qid=1701201686&sprefix=laptops%2Bgaming%2B%2Caps%2C129&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+                <img src="https://m.media-amazon.com/images/I/614sPaXse4L.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox23"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox23"> 
+
+            <div class="txt1">
+                
+                <pre>
+HP 250 G9 | Notebook
+ Pc portatile i7 
+
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p24">
+            <a href="https://www.amazon.it/Lenovo-IdeaPad-Notebook-Processore-i7-12650H/dp/B0BCKHBLK5/ref=sr_1_12?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3T4TB1RO3R7D&keywords=laptops%2Bgaming&qid=1701201686&sprefix=laptops%2Bgaming%2B%2Caps%2C129&sr=8-12&th=1">
+                <img src="https://m.media-amazon.com/images/I/711qCpmDw5L.__AC_SY300_SX300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox24"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox24"> 
+
+            <div class="txt1">
+                
+                <pre>
+Lenovo IdeaPad Gaming 3
+ Portatile, WUXGA IPS 350nits
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p25">
+            <a href="https://www.amazon.it/Sony-PlayStation-5-Digital-Edition/dp/B08KJF2D25/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1V3V4NXQRXY3H&keywords=ps+5&qid=1701201768&sprefix=ps+5%2Caps%2C109&sr=8-4">
+                <img src="https://m.media-amazon.com/images/I/5183aMmrVdL._AC_SX342_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox33"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox33"> 
+
+            <div class="txt1">
+                
+                <pre>
+PlayStation 5 Digital
+ Console
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p26">
+            <a href="https://www.amazon.it/Apple-2023-Portatile-MacBook-chip/dp/B0CM5XNRWQ/ref=sr_1_2_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JRU7X4XOIQWQ&keywords=macbook%2Bpro&qid=1701201826&refinements=p_36%3A200000-500000&rnid=9733316031&sprefix=macbook%2Bpro%2Caps%2C101&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+                <img src="https://m.media-amazon.com/images/I/61-yDNLyeyL._AC_SX342_.jpg" alt="network issue " height="170">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox34"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox34"> 
+
+            <div class="txt1">
+                
+                <pre>
+Apple 2023 Portatile MacBook
+ Pro con chip M3 Pro, CPU 12
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p27">
+            <a href="https://www.amazon.it/Apple-2021-Computer-desktop-all/dp/B09334W4ZR/ref=sr_1_4_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JRU7X4XOIQWQ&keywords=macbook+pro&qid=1701201862&refinements=p_36%3A200000-500000&rnid=9733316031&sprefix=macbook+pro%2Caps%2C101&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">
+                <img src="https://m.media-amazon.com/images/I/61PenuYtXQS._AC_SX342_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox35"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox35"> 
+
+            <div class="txt1">
+                
+                <pre>
+Apple 2021 
+Computer desktop
+                </pre>
+            </div>
+          
+
+        </div>
+        <div class="p28">
+            <a href="https://www.amazon.it/Studiobook-W7600Z3A-3840X2400-TAST-RETR-FINGERPRINT/dp/B0B3M5W816/ref=sr_1_15?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JRU7X4XOIQWQ&keywords=macbook+pro&qid=1701201862&refinements=p_36%3A200000-500000&rnid=9733316031&sprefix=macbook+pro%2Caps%2C101&sr=8-15">
+                <img src="https://m.media-amazon.com/images/I/3109WZgn1OL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox36"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox36"> 
+
+            <div class="txt1">
+                
+                <pre>
+Studiobook Pro 16 OLED
+                </pre>
+            </div>
+            
+        </div>
+        <div class="p29">
+            <a href="https://www.amazon.it/Lenovo-Legion-16IRX8H-82WQ00AAUS-Tetracosa-core/dp/B0CMTV1R2D/ref=sr_1_26?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=JRU7X4XOIQWQ&keywords=macbook+pro&qid=1701201862&refinements=p_36%3A200000-500000&rnid=9733316031&sprefix=macbook+pro%2Caps%2C101&sr=8-26">
+                <img src="https://m.media-amazon.com/images/I/51pTFqo314L.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox37"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox37"> 
+
+            <div class="txt1">
+                
+                <pre>
+Lenovo Legion Pro 7 
+16IRX8H
+                </pre>
+            </div>
+            
+        </div>
+        <div class="p30">
+            <a href="https://www.amazon.it/Gaming-Computer-Fisso-Desktop-Completo/dp/B0B3QM6QL7/ref=sr_1_23?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=XRTUC79DOHWB&keywords=gaming%2Bpc&qid=1701201982&sprefix=gaming%2Bp%2Caps%2C112&sr=8-23&th=1">
+                <img src="https://m.media-amazon.com/images/I/71D0BZ1R0QL.__AC_SY300_SX300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox38"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox38"> 
+
+            <div class="txt1">
+                
+                <pre>
+PC Gaming Computer 
+Fisso Desktop
+                </pre>
+            </div>
+            
+        </div>
+        <div class="p31">
+            <a href="https://www.amazon.it/Sedatech-Watercooling-i9-14900KF-RTX4090-Windows/dp/B0CLF7FBTV/ref=sr_1_30?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=XRTUC79DOHWB&keywords=gaming%2Bpc&qid=1701202017&sprefix=gaming%2Bp%2Caps%2C112&sr=8-30&th=1">
+                <img src="https://m.media-amazon.com/images/I/71+ewYVZeeL._AC_SY450_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox39"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox39"> 
+
+            <div class="txt1">
+                
+                <pre>
+Sedatech PC Gaming 
+Pro Watercooling
+                </pre>
+            </div>
+            
+        </div>
+        <div class="p32">
+            <a href="https://www.amazon.it/ASUS-UX3402ZA-B0BSH3SWR5-Alluminio-Generazione/dp/B0BSH3SWR5/ref=sr_1_4_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2T0GDZXGZW646&keywords=google%2Blaptop&qid=1701202078&sprefix=google%2Blaptop%2Caps%2C112&sr=8-4-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">
+                <img src="https://m.media-amazon.com/images/I/61VGCvOO7aL.__AC_SX300_SY300_QL70_ML2_.jpg" alt="network issue " height="200">
+            </a>
+            <!-- <input type="checkbox" id="myCheckbox1"> -->
+            <label for="myCheckbox40"></label>
+            <input type="radio" value="section a" name="section" id="myCheckbox40"> 
+
+            <div class="txt1">
+                
+                <pre>
+ASUS Zenbook 14 UX3402ZA#B0BS
+                </pre>
+            </div>
+            
+        </div>
+    
+
+        <div class="img1">
+            <a href="file:///C:/Users/08-1infO22-17/Desktop/market/phone.html">
+                <img src="mobile-phone_402384.png" alt="network issue">
+                
+            </a>
+            <hr>
+            <div class="txt1">
+                <p>Phones</p>
+            </div>
+        </div>
+        <div class="img2">
+            <a href="https://youtube.com">
+                <img src="laptop_7848697.png" alt="network issue">
+                
+            </a>
+            <hr>
+            <div class="txt2">
+                <p>Laptops</p>
+            </div>
+        </div>
+        <div class="img3">
+            <a href="https://youtube.com">
+                <img src="football-shirt_4691093.png" alt="network issue">
+                
+            </a>
+<hr>
+            <div class="txt3">
+                <p>Cloths</p>
+            </div>
+        </div>
+        <div class="img4">
+            <a href="https://youtube.com">
+                <img src="ipod_2223357.png" alt="network issue">
+                
+            </a>
+<hr>
+            <div class="txt4">
+                <p>Tabs</p>
+            </div>
+        </div>
+        <div class="img5">
+            <a href="https://youtube.com">
+                <img src="headphone_1073691.png" alt="network issue">
+                
+            </a>
+<hr>
+            <div class="txt5">
+                <p>Headphones</p>
+
+            </div>
+        </div>
+    </div>
+    <div class="img5">
+        <br>
+        
+
+        <h3>Save Items</h3>
+        </a>
+        
+        <div class="txt5">
+            <p></p>
+                                
+        </div>
+    </div>
+</div>
+<div class="bar">
+    <img src="Screenshot 2023-11-18 191858.png" alt="network issue " height="150" width="1550">
+<div class="txt1">
+</div>
+</div>
+<div class="ba">
+<img src="Screenshot 2023-11-18 130423.png" alt="network issue " height="150" width="300">
+<div class="txt1">
+</div>
+</div>
+    
+    <script>
+        let a = document.getElementById("btn1");
+        let b = document.getElementById("btn2");
+        let c = document.getElementById("btn3");
+        let d = document.getElementById("btn00");
+        let dd = document.getElementById("btn5");
+        const e = document.getElementById("myCheckbox1");
+        const f = document.getElementById("myCheckbox2");
+        const g = document.getElementById("myCheckbox3");
+        const  h= document.getElementById("myCheckbox4");
+        const  j= document.getElementById("myCheckbox5");
+        const l = document.getElementById("myCheckbox6");
+        const m = document.getElementById("myCheckbox7");
+        const n = document.getElementById("myCheckbox8");
+        const o = document.getElementById("myCheckbox9");
+        const p = document.getElementById("myCheckbox10");
+        const pp = document.getElementById("myCheckbox11");
+        const q = document.getElementById("myCheckbox12");
+        const  r= document.getElementById("myCheckbox13");
+        const s = document.getElementById("myCheckbox14");
+        const t = document.getElementById("myCheckbox15");
+        const  y = document.getElementById("myCheckbox16");
+        const  A= document.getElementById("myCheckbox17");
+        const B = document.getElementById("myCheckbox18");
+        const C = document.getElementById("myCheckbox19");
+        const  D = document.getElementById("myCheckbox20");
+        const  AA= document.getElementById("myCheckbox21");
+        const BB = document.getElementById("myCheckbox22");
+        const CC = document.getElementById("myCheckbox23");
+        const  DD = document.getElementById("myCheckbox24");
+        const  AAA= document.getElementById("myCheckbox25");
+        const BBB = document.getElementById("myCheckbox26");
+        const CCC = document.getElementById("myCheckbox27");
+        const  DDD = document.getElementById("myCheckbox28");
+        const  AAAA= document.getElementById("myCheckbox29");
+        const BBBB = document.getElementById("myCheckbox30");
+        const CCCC = document.getElementById("myCheckbox31");
+        const  DDDD = document.getElementById("myCheckbox32");
+        const  a1 = document.getElementById("myCheckbox33");
+        const  a2= document.getElementById("myCheckbox34");
+        const  a3 = document.getElementById("myCheckbox35");
+        const  a4 = document.getElementById("myCheckbox36");
+        const  a5 = document.getElementById("myCheckbox37");
+        const  a6= document.getElementById("myCheckbox38");
+        const  a7 = document.getElementById("myCheckbox39");
+        const  a8 = document.getElementById("myCheckbox40");
+        const  er = document.getElementById("h11");
+        let container = document.createElement("div");
+        document.body.appendChild(container);
+
+        function LoadImages(link) {
+    let img = new Image(100, 100);
+    img.src = link;
+    img.style.border = "8px solid orange";
+    img.style.borderRadius = "8px";
+    container.appendChild(img);
+}
+container.style.display = "flex";
+container.style.flexDirection = "column";
+window.onload = function () {
+    let storedImages = localStorage.getItem('userImages');
+    if (storedImages) {
+        let images = storedImages.split(',');
+        images.forEach(function (imageLink) {
+            LoadImages(imageLink);
+        });
+    }
+};
+///////////////////////////////////////////////////////////////
+btn5.addEventListener("click", function () {
+   // remove button 
+   localStorage.removeItem('userImages');
+
+});
+///////////////////////////////////////////////////////////////
+e.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61jAvz8db7L.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+
+pp.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/71nDYhgPwwL._AC_SY450_.jpg"
+    if (link) {
+        // Sto
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the ne
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+f.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/81S5tolkqSL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        // Sto
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the ne
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+g.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/71hj9sL2ZqL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        // Sto
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the ne
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+h.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/71IjKpXWaJL._AC_SY450_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+j.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/61YIP-bNIoL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+l.addEventListener("click", function () {
+    let link = "https://m.media-amazon.com/images/I/51o7U-7oUHL.__AC_SY300_SX300_QL70_ML2_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+    
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+m.addEventListener("click", function () {
+    let link = "https://m.media-amazon.com/images/I/71aZySz4DDL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+n.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/71yWBoj2kuL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+ 
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+o.addEventListener("click", function () {
+   link = "https://m.media-amazon.com/images/I/71vgvypkyGL.__AC_SY300_SX300_QL70_ML2_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+p.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/61xERL34brL.__AC_SY445_SX342_QL70_ML2_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+/////////////////////////// continue from here ///////////////////////////////////////////
+q.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/91BtRAlERLL.__AC_SY300_SX300_QL70_ML2_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+r.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/71gqJCJSjJL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+s.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/817tLadBoFL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+t.addEventListener("click", function () {
+      link = "https://m.media-amazon.com/images/I/71Mj6CjoeWL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+
+y.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/51XwXkCN9cL._AC_SY450_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+A.addEventListener("click", function () {
+     link = "https://m.media-amazon.com/images/I/61La8PAa42L.__AC_SY445_SX342_QL70_ML2_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+B.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/71EbycNfD4L._AC_SX342_.jpg"
+       if (link) {
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+ });
+C.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/41+F8foKVxS._AC_SY450_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+D.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/618nQA27KeS.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+       
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+        
+        const storedValue = localStorage.getItem('userEmail');
+        if (storedValue) {
+            d.innerHTML = storedValue;
+        }
+     
+        c.addEventListener('click', () => {
+            qqq = prompt("Enter your Gmail");
+            localStorage.setItem('sec' , qqq);
+            if (qqq) {
+                let aa = qqq[0];
+                d.innerHTML = aa;
+
+               
+                localStorage.setItem('userEmail', aa);
+               
+                // Example: Validate an email address
+}
+
+        });
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+                                                             // SECURITY OF WEBSITE
+
+    let username = localStorage.getItem('sec');
+
+if (username === "" || username === "" || username === "vaffanculo" || username === "porcaputtana" || username === "porca" || username === "porcatroia" || username === "porcamiseria"
+    || username === "mortodifiga" || username === "chepalle" || username === "madonnasanta" || username === "madonna" || username === "stronzo" || username === "figliodiputtana" || username === ""
+    || username === "rincoglionito" || username === "rompicoglioni" || username === "dio porco" || username === "cagacazzo" || username === "leccaculo" || username === "leccapiedi" || username === "lecchino"
+    || username === "Pezzodimerda"
+    || username === "cagacazzo"
+    || username === "coglione") {
+
+    window.location.href = "https://www.europol.europa.eu/stopchildabuse";
+
+
+const data = 'HEY BRO  PLEASE DONT ABOUSE THIS IS NOT LEGAL THIS IS OUT OF RULES IF U WANTS STAY ON MY SITE PLEASE DONT ABOUSE YOU  BLOCD FROM MY SITE I A M SORRY ! WRITE NOW IF U WANTS TO REBACIN SITE NOT POSSIBLE SEND ME  GMAIL THEN I SE WHATS CAN I DO PLEASE DO NOT ABOUSE RETURN EVER';
+
+
+
+const blob = new Blob([data], { type: 'text/plain' });
+
+const downloadLink = document.createElement('a');
+downloadLink.download = 'WARNING.txt';
+downloadLink.href = window.URL.createObjectURL(blob);
+downloadLink.click();
+    }
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+        a.addEventListener('click', () => {
+            window.location.href = "https://acc0855.github.io/codersss/";
+        });
+        b.addEventListener('click', () => {
+            window.location.href = "page2";
+        });
+
+        
+        const searchForm = document.getElementById("search-form");
+        const searchInput = document.getElementById("search-input");
+
+        searchForm.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const searchQuery = searchInput.value;
+           
+            window.location.href = `/search?query=${searchQuery}`;
+        });
+
+       
+AA.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/51YjeIaHfxL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+     
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+          localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+BB.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/81dt9ETYGML.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+     
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+          localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+CC.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/614sPaXse4L.__AC_SX300_SY300_QL70_ML2_.jpg" 
+    if (link) {
+      
+        localStorage.setItem('user', link);
+        let storedImages = localStorage.getItem('userImages') || '';
+
+      
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+    }
+});
+DD.addEventListener("click", function () {
+       link = "https://m.media-amazon.com/images/I/711qCpmDw5L.__AC_SY300_SX300_QL70_ML2_.jpg" 
+    if (link) {
+       
+        localStorage.setItem('user', link);
+
+        
+        let storedImages = localStorage.getItem('userImages') || '';
+
+       
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        LoadImages(link);
+
+    }
+});
+
+
+a1.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/5183aMmrVdL._AC_SX342_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+ a2.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61-yDNLyeyL._AC_SX342_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+ a3.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61PenuYtXQS._AC_SX342_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+   a4.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/3109WZgn1OL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+a5.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/51pTFqo314L.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+a6.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/71D0BZ1R0QL.__AC_SY300_SX300_QL70_ML2_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+a7.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/71+ewYVZeeL._AC_SY450_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+a8.addEventListener("click", function () {
+    link = "https://m.media-amazon.com/images/I/61VGCvOO7aL.__AC_SX300_SY300_QL70_ML2_.jpg"
+    if (link) {
+        // Store the image link in localStorage
+        localStorage.setItem('user', link );
+
+        // Retrieve all stored images
+        let storedImages = localStorage.getItem('userImages') || '';
+
+        // Append the new image link to the stored images
+        localStorage.setItem('userImages', storedImages + ',' + link);
+
+        // Load and display the images
+        LoadImages(link);
+    }
+});
+    </script>
+    
+</body>
+</html>
